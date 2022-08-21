@@ -37,3 +37,6 @@ function startStopWatch() {
     setInterval(handleTimeChange, 10);
 }
 
+const startButton = document.getElementById('toggle-stop-watch');
+
+startButton.addEventListener('click', startStopWatch);
