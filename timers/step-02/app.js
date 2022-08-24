@@ -1,5 +1,3 @@
-import object, { name, number } from './timers.js';
+import fullName from './timers.js';
 
-console.log('name: ', name);
-console.log('object: ', object);
-console.log('number: ', number);
+console.log(fullName);
