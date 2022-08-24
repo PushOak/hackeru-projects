@@ -3,11 +3,11 @@
 const fullName = {
     name: 'moshe',
     last_name: 'rabeno',
-    fname: function() {
-        console.log('fname function');
+    fname: function(name) {
+        console.log('fname function', name);
     }
 }
 
-fullName.fname();
+fullName.fname('timer.js');
 
 export default fullName;
