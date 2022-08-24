@@ -1,3 +1,4 @@
+// Constructor function
 function Timer(initialTime) {
     this.initialTime = initialTime;
 
