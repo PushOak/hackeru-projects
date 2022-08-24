@@ -19,5 +19,6 @@ obj1.fname();
 obj2.fname();
 
 console.log('obj1', obj1);
+console.log('obj2', obj2);
 
 export default fullName;
