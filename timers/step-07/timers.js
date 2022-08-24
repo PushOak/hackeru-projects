@@ -18,11 +18,12 @@ function Timer(initialTime) {
         const startButton = document.createElement('button');
         startButton.innerText = 'Start';
 
+        // Delete Button
         const deleteButton = document.createElement('button');
         deleteButton.innerText = 'Delete';
         deleteButton.addEventListener('click', this.deleteTimer);
 
-        // add pause button
+        // add pause button - homework
 
         timerElement.innerText = this.initialTime;
         timerElement.appendChild(startButton);
