@@ -5,9 +5,11 @@ function Timer(initialTime) {
     this.createTimer = function () {
         const timersContainer = document.querySelector('#timers-container');
 
-        const timerElement = document.createElement('div')
+        const timerElement = document.createElement('p')
         timerElement.innerText = 'new timer with created element';
 
+        timersContainer.appendChild(timerElement);
+    }
 }
 
 export default Timer;
