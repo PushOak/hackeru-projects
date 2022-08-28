@@ -1,12 +1,13 @@
-const timerInput = document.querySelector('#time-input');
+// app.js
+import Timer from './timer.js';
 
-function Timer() {
-    
-}
+const timerInput = document.querySelector('#time-input');
 
 function addTimer() {
     const initialTime = timerInput.value;
     console.log('add timer', initialTime);
+    const timer = new Timer(initialTime);
+    timer.createTimer();
 }
 
 // add click event listener to the add timer button
