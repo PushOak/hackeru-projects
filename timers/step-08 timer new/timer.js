@@ -8,7 +8,7 @@ export default function Timer(initialTime) {
     }
 
     function deleteTimer() {
-        console.log('delete timer function');
+        timerElement.remove();
     }
 
     function createStartButton() {
