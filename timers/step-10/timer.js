@@ -16,7 +16,7 @@ export default function Timer(initialTime) {
     }
 
     function startTimer() {
-        if(isTimerRunning) {
+        if(isTimerRunning == true) {
             return;
         }
         console.log('timer is running');
