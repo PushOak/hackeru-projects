@@ -4,10 +4,11 @@ export default function Timer(initialTime) {
     let timerElement;
     let timeView;
     let intervalId;
+    let isTimerRunning = false;
 
     function displayTime() {
         time--;
-        timeView.innerText = `${time}: ${initialTime}`;
+        timeView.innerText = `${time}`;
         if (time == 0) {
             stopTimer();
             return;
@@ -15,12 +16,18 @@ export default function Timer(initialTime) {
     }
 
     function startTimer() {
+        if(isTimerRunning) {
+            return;
+        }
         console.log('timer is running');
         intervalId = setInterval(displayTime, 1000);
+        isTimerRunning = true;
     }
 
     function stopTimer() {
+        console.log('Timer is paused');
         clearInterval(intervalId);
+        isTimerRunning = false;
     }
 
     function deleteTimer() {
